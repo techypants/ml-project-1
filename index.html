@@ -21,6 +21,11 @@
     <div id="title">
       <span>Linear Regression with Gradient Descent</span>
       <a href="https://github.com/techypants/ml-project-1"><img src="github-mark-white.png"></a>
+      <button id="clapButton" style="background-color: black;border: none;
+      background-color: transparent;
+      padding: 0;
+      font-size: inherit;
+      cursor: pointer"> 👏</button>
     </div>
     <container id="cont">
 <!--       <div style="background-color: red; width:100%; height:100%"></div> -->
@@ -42,6 +47,17 @@
   </div>
     
     <script src="grad-des.js"></script>
-    
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  var clapButton = document.getElementById('clapButton');
+  var audio = new Audio('clap.mp3');
+
+  clapButton.addEventListener('click', function () {
+    // Play the audio file
+    audio.play();
+  });
+});
+
+    </script>
   </body>
 </html>
