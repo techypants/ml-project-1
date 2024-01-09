@@ -1,0 +1,113 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+#cnv {
+  
+}
+#cont{
+  margin-top:50px;
+   background-color: gray; 
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#name{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  animation: getsmall 1s forwards ease;
+  animation-delay: 2.8s;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#name span{
+  background-color: black;
+  color:white;
+  width:100%;
+  text-align:center;
+  
+}
+#gradientInfo{
+  background-color: rgb(18, 18, 31);
+  color: white;
+  font-size: 20px;
+  width:100%;
+  text-align: center;
+}
+#a{
+  animation: enterleft 1s forwards ease-in-out;
+}
+#r{
+  animation: enterright 1s forwards ease-in-out;
+}
+#t{
+  animation: entertop 1s forwards ease-in-out;
+}
+#title{
+  background-color: black;
+  color:white;
+  width:100%;
+  height: 100%;
+  font-size: 20px;
+  padding-top:40px;
+  text-align: center;
+  animation: getbig 1s forwards ease-in-out;
+  animation-delay: 2s;
+}
+#ref{
+  background-color: black;
+  display: inline-block;
+  color: white;
+  width:100%;
+}
+#ref li a {
+  text-decoration: none;
+  color:white
+}
+@keyframes enterleft{
+  0%{
+  transform:translateX(-100%);
+  }
+  100%{
+  transform:translateX(0%)
+  }
+}
+@keyframes enterright{
+  0%{
+  transform:translateX(100%);
+  }
+  100%{
+  transform:translateX(0%)
+  }
+}@keyframes entertop{
+  0%{
+  transform:translateY(-100%);
+  }
+  100%{
+  transform:translateY(0%)
+  }
+}
+@keyframes getsmall{
+  0%{
+    font-size: 100px;
+  }
+  100%{
+    font-size: 20px;
+    flex-direction: row;
+  }
+}
+@keyframes getbig{
+  0%{
+    font-size: 20px;
+  }
+  100%{
+    font-size: 40px;
+  }
+}
