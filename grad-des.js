@@ -47,11 +47,15 @@ function drawLine() {
 }
 
 function mousePressed() {
-  var x = map(mouseX, 0, width, 0, 1);
-  var y = map(mouseY, 0, height, 1, 0);
-  var point = createVector(x, y);
-  data.push(point);
+  
+  if (mouseX >= 0 && mouseX <= width && mouseY >= 0 && mouseY <= height) {
+    var x = map(mouseX, 0, width, 0, 1);
+    var y = map(mouseY, 0, height, 1, 0);
+    var point = createVector(x, y);
+    data.push(point);
+  }
 }
+
 
 function draw() {
   background(51);
