@@ -3,10 +3,13 @@ var data = [];
 var m = 1;
 var b = 0;
 
-function leastsetup() {
-  const cnv2=createCanvas(400, 400);
-  cnv2.id('cnv2')
-  cnv2.parent('cont')
+function setup() {
+  const cnv =createCanvas(400, 400); 
+  cnv.id('cnv');
+  cnv.parent('cont');
+  gradientInfoDiv = createDiv('');
+  gradientInfoDiv.id('gradientInfo');
+  gradientInfoDiv.parent('cont');
 }
 
 function linearRegression() {
@@ -29,6 +32,10 @@ function linearRegression() {
 
   m = num / den;
   b = ymean - m * xmean;
+  var infoDiv = document.getElementById('gradientInfo');
+  infoDiv.innerHTML = 'Linear Regression Info:<br>' +
+                     'Slope (m): ' + m.toFixed(2) + '<br>' +
+                     'Intercept (b): ' + b.toFixed(2);
 }
 
 function drawLine() {

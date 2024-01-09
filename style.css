@@ -8,7 +8,7 @@ html, body {
   
 }
 #cont{
-  margin-top:50px;
+  margin-top:0px;
    background-color: gray; 
   width:100%;
   display: flex;
@@ -22,7 +22,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 100px;
+  font-size: 60px;
   animation: getsmall 1s forwards ease;
   animation-delay: 2.8s;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -32,7 +32,6 @@ html, body {
   color:white;
   width:100%;
   text-align:center;
-  
 }
 #gradientInfo{
   background-color: rgb(18, 18, 31);
@@ -52,6 +51,10 @@ html, body {
 }
 #title{
   background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   color:white;
   width:100%;
   height: 100%;
@@ -60,6 +63,10 @@ html, body {
   text-align: center;
   animation: getbig 1s forwards ease-in-out;
   animation-delay: 2s;
+}
+#title a img{
+  margin:20px;
+  width:30px;
 }
 #ref{
   background-color: black;
@@ -71,6 +78,17 @@ html, body {
   text-decoration: none;
   color:white
 }
+
+#links{
+  padding-top:40px;
+  font-size: 20px;
+  text-align:center;
+}
+#links a{ 
+  text-decoration: none;
+  color:white;
+}
+
 @keyframes enterleft{
   0%{
   transform:translateX(-100%);
@@ -96,7 +114,7 @@ html, body {
 }
 @keyframes getsmall{
   0%{
-    font-size: 100px;
+    font-size: 60px;
   }
   100%{
     font-size: 20px;
